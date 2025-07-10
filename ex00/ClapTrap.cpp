@@ -6,12 +6,15 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:13:42 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 02:20:04 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/07/10 03:58:42 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
+ClapTrap::ClapTrap() : _name("default_claptrap"), _hitPoints(10), _energyPoints(10), _attackDamage(0) {
+	std::cout << "Default ClapTrap created." << std::endl;
+}
 ClapTrap::ClapTrap(const std::string &name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0) {
 	std::cout << "ClapTrap " << _name << " created." << std::endl;
 }

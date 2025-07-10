@@ -6,12 +6,19 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 02:16:33 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 02:25:05 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/07/10 03:57:35 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
 
+DiamondTrap::DiamondTrap()
+	: ClapTrap("default_diamondtrap_clap_name"), ScavTrap("default_diamondtrap"), FragTrap("default_diamondtrap"), _name("default_diamondtrap") {
+	_hitPoints = FragTrap::_hitPoints;
+	_energyPoints = ScavTrap::_energyPoints;
+	_attackDamage = FragTrap::_attackDamage;
+	std::cout << "Default DiamondTrap created." << std::endl;
+}
 DiamondTrap::DiamondTrap(const std::string &name)
 	: ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name), _name(name) {
 	_hitPoints = FragTrap::_hitPoints;

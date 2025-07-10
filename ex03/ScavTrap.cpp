@@ -6,12 +6,18 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:36:15 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 02:19:07 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/07/10 03:57:20 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
+ScavTrap::ScavTrap() : 
+	ClapTrap("default_scavtrap", 100, 50, 20),
+	_guardMode(false) 
+{
+	std::cout << "Default ScavTrap created." << std::endl;
+}
 ScavTrap::ScavTrap(const std::string &name) : 
 	ClapTrap(name, 100, 50, 20),
 	_guardMode(false) 

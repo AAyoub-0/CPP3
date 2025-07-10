@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:03:05 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 02:19:37 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/07/10 03:58:20 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class ClapTrap
 		unsigned int _energyPoints;
 		unsigned int _attackDamage;
 	public:
+		ClapTrap();
 		ClapTrap(const std::string &name);
 		ClapTrap(const ClapTrap &other);
 		ClapTrap(const std::string &name,

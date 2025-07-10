@@ -6,12 +6,15 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 01:45:37 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 02:18:24 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/07/10 03:57:28 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
+FragTrap::FragTrap() : ClapTrap("default_fragtrap", 100, 100, 30) {
+	std::cout << "Default FragTrap created." << std::endl;
+}
 FragTrap::FragTrap(const std::string &name) : ClapTrap(name, 100, 100, 30) {
 	std::cout << "FragTrap " << _name << " created." << std::endl;
 }
