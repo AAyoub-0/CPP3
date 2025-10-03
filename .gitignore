@@ -1,2 +1,7 @@
 *.o
 .vscode
+
+ex00/clapTrap
+ex01/clapTrap
+ex02/FlapTrap
+ex03/DiamondTrap

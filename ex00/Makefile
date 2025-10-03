@@ -6,9 +6,11 @@
 #    By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/13 15:52:18 by aboumall          #+#    #+#              #
-#    Updated: 2025/07/09 22:18:49 by aboumall         ###   ########.fr        #
+#    Updated: 2025/10/03 03:07:36 by aboumall         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+HEADERS = ClapTrap.hpp
 
 TARGET = clapTrap
 
@@ -19,7 +21,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = ClapTrap.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 
-all: $(TARGET)
+all: $(TARGET) $(HEADERS)
 
 $(TARGET): $(OBJ)
 	$(CXX) $(OBJ) -o $(TARGET)
