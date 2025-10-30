@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 23:56:31 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 03:57:51 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/10/30 17:30:45 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ class FragTrap : public ClapTrap
 		~FragTrap();
 
 		void attack(const std::string &target);
-		void takeDamage(unsigned int amount);
-		void beRepaired(unsigned int amount);
 		void highFivesGuys() const;
 };
 
