@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:16:01 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/09 22:52:09 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/10/30 17:38:36 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int main() {
 	scavtrap.guardGate();
 	scavtrap.takeDamage(2);
 	scavtrap.beRepaired(3);
-	scavtrap.setGuardMode(true);
 	scavtrap.attack("target4");
 
 	return 0;
