@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 02:16:33 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 03:57:35 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/04 20:07:58 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,6 @@ DiamondTrap::~DiamondTrap() {
 
 void DiamondTrap::attack(const std::string &target) {
 	ScavTrap::attack(target);
-}
-void DiamondTrap::takeDamage(unsigned int amount) {
-	ClapTrap::takeDamage(amount);
-}
-void DiamondTrap::beRepaired(unsigned int amount) {
-	ClapTrap::beRepaired(amount);
 }
 
 void DiamondTrap::whoAmI() const {
