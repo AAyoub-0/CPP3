@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:13:42 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 03:58:42 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:16:52 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@ ClapTrap::ClapTrap(const ClapTrap &other) : _name(other._name), _hitPoints(other
 }
 ClapTrap::~ClapTrap() {
 	std::cout << "ClapTrap " << _name << " destroyed." << std::endl;
+}
+
+ClapTrap &ClapTrap::operator=(const ClapTrap &other) {
+	if (this != &other) {
+		std::cout << "ClapTrap Assignation operator called" << std::endl;
+		_name = other._name;
+	}
+	return *this;
 }
 
 void ClapTrap::attack(const std::string &target) {

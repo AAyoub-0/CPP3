@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:36:15 by aboumall          #+#    #+#             */
-/*   Updated: 2025/10/30 17:25:41 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:18:02 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,14 @@ ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) {
 }
 ScavTrap::~ScavTrap() {
 	std::cout << "ScavTrap " << _name << " destroyed." << std::endl;
+}
+
+ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
+	if (this != &other) {
+		std::cout << "ScavTrap Assignation operator called" << std::endl;
+		_name = other._name;
+	}
+	return *this;
 }
 
 void ScavTrap::attack(const std::string &target)  {

@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:03:05 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 03:58:38 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:11:51 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class ClapTrap
 		ClapTrap(const std::string &name);
 		ClapTrap(const ClapTrap &other);
 		~ClapTrap();
+
+		ClapTrap &operator=(const ClapTrap &other);
 
 		void attack(const std::string &target);
 		void takeDamage(unsigned int amount);

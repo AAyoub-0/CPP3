@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 22:03:05 by aboumall          #+#    #+#             */
-/*   Updated: 2025/07/10 03:57:47 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:13:17 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ class ClapTrap
 					unsigned int energyPoints,
 					unsigned int attackDamage);
 		virtual ~ClapTrap();
+
+		ClapTrap &operator=(const ClapTrap &other);
 
 		virtual void attack(const std::string &target);
 		virtual void takeDamage(unsigned int amount);

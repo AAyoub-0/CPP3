@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 01:45:37 by aboumall          #+#    #+#             */
-/*   Updated: 2025/10/30 17:30:53 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:18:22 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@ FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other) {
 }
 FragTrap::~FragTrap() {
 	std::cout << "FragTrap " << _name << " destroyed." << std::endl;
+}
+
+FragTrap &FragTrap::operator=(const FragTrap &other) {
+	if (this != &other) {
+		std::cout << "FragTrap Assignation operator called" << std::endl;
+		_name = other._name;
+	}
+	return *this;
 }
 
 void FragTrap::attack(const std::string &target) {
