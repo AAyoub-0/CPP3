@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 02:16:33 by aboumall          #+#    #+#             */
-/*   Updated: 2025/11/04 20:07:58 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:18:45 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,14 @@ DiamondTrap::DiamondTrap(const DiamondTrap &other)
 }
 DiamondTrap::~DiamondTrap() {
 	std::cout << "DiamondTrap destructor called for " << _name << std::endl;
+}
+
+DiamondTrap &DiamondTrap::operator=(const DiamondTrap &other) {
+	if (this != &other) {
+		std::cout << "DiamondTrap Assignation operator called" << std::endl;
+		_name = other._name;
+	}
+	return *this;
 }
 
 void DiamondTrap::attack(const std::string &target) {

@@ -6,7 +6,7 @@
 #    By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/13 15:52:18 by aboumall          #+#    #+#              #
-#    Updated: 2025/10/30 17:23:12 by aboumall         ###   ########.fr        #
+#    Updated: 2025/11/11 14:05:28 by aboumall         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,9 +30,10 @@ $(TARGET): $(OBJ) $(HEADERS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(TARGET)
+	rm -f $(OBJ)
 
 fclean: clean
+	rm -f $(TARGET)
 
 re: fclean all
 

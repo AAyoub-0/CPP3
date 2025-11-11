@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 02:01:41 by aboumall          #+#    #+#             */
-/*   Updated: 2025/11/04 20:07:46 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:27:03 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,15 @@ class DiamondTrap : public ScavTrap, public FragTrap
 		DiamondTrap(const DiamondTrap &other);
 		~DiamondTrap();
 
+		DiamondTrap &operator=(const DiamondTrap &other);
+
 		void attack(const std::string &target);
 
 		void whoAmI() const;
+
+		using ClapTrap::setAttackDamage;
+		using ClapTrap::beRepaired;
+		using ClapTrap::takeDamage;
 };
 
 #endif
