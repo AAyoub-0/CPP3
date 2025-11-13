@@ -6,7 +6,7 @@
 /*   By: aboumall <aboumall42@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 02:16:33 by aboumall          #+#    #+#             */
-/*   Updated: 2025/11/11 15:18:45 by aboumall         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:56:22 by aboumall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,6 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &other) {
 		_name = other._name;
 	}
 	return *this;
-}
-
-void DiamondTrap::attack(const std::string &target) {
-	ScavTrap::attack(target);
 }
 
 void DiamondTrap::whoAmI() const {
